@@ -25,7 +25,7 @@ def getData(body, is_edit, username):
     if "no response" not in lines[1].lower():
         data["url"] = add_https_to_url(lines[1].strip())
     if "no response" not in lines[3].lower():
-        data["company_name"] = lines[3]
+        data["company_name"] = lines[4]
     if "no response" not in lines[5].lower():
         data["title"] = lines[5]
     if "no response" not in lines[7].lower():
